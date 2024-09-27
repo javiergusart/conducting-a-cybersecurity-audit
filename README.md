@@ -1,6 +1,4 @@
-# Navigating Controls and Compliance: My First Experience with a Cybersecurity Checklist
-
-**Subtitle:** Identifying Security Gaps and Compliance Issues in a Mock Audit.
+# Navigating Controls and Compliance: Identifying Security Gaps and Compliance Issues in a Mock Audit.
 
 Cybersecurity is more than just preventing hackers from getting into your network. It’s about controls, compliance, and risk management—a trifecta that ensures companies protect not only their data but their reputation. As someone new to the field, I recently took a deep dive into creating a mock Controls and Compliance Checklist for a fictional company, **Botium Toys**, and I wanted to share my experience, insights, and what I learned along the way.
 
