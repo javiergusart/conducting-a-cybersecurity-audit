@@ -1,69 +1,208 @@
-# Navigating Controls and Compliance: Identifying Security Gaps and Compliance Issues in a Mock Audit.
+# Identifying Security Gaps and Compliance Issues in a Mock Audit
 
-Cybersecurity is more than just preventing hackers from getting into your network. It’s about controls, compliance, and risk management—a trifecta that ensures companies protect not only their data but their reputation. As someone new to the field, I recently took a deep dive into creating a mock Controls and Compliance Checklist for a fictional company, **Botium Toys**, and I wanted to share my experience, insights, and what I learned along the way.
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Audit Scenario](#audit-scenario)
+3. [Audit Workflow Checklist](#audit-workflow-checklist)
+4. [Controls Assessment](#controls-assessment)
+5. [Compliance Checklist](#compliance-checklist)
+6. [Recommendations for the IT Manager](#recommendations-for-the-it-manager)
+7. [Conclusion](#conclusion)
 
-## A Quick Overview of Botium Toys
+## Introduction
 
-Botium Toys, a mid-sized toy retailer, faces multiple cybersecurity challenges. They store sensitive customer data (like credit card information and personally identifiable information, or PII) on-premises, while managing remote workstations and retail operations both online and offline. The company has critical assets, from employee devices to internal networks, but their security posture is far from where it needs to be. My task was to assess their current controls and compliance, identify gaps, and make recommendations on how to mitigate these risks.
+This report outlines an internal security audit conducted on Botium Toys, a fictitious toy company, as part of my portfolio for the Google Cybersecurity Professional Certificate program, specifically in the Play It Safe: Manage Security Risks course. The primary aim of this audit is to evaluate Botium Toys' cybersecurity practices and align them with industry standards, providing recommendations for addressing identified vulnerabilities to enhance the organization’s overall security posture.
 
-## Understanding the Scope and Goals
+This audit is informed by the **[Botium Toys: Scope, Goals, and Risk Assessment Report](https://docs.google.com/document/d/10_ZmqYdn5XoL6UW03TiVoMQJKeVcEU8RIRMTag1UT8M/edit?usp=share_link)**, which outlines the current state of the organization’s cybersecurity measures and identifies key areas requiring improvement.
 
-Before jumping into any cybersecurity audit, you need a clear understanding of what you're dealing with. For Botium Toys, the **scope** included everything: their internal network, data storage, employee devices, and storefront products. The **goal**? To evaluate existing security measures and determine which industry best practices needed to be implemented to improve Botium Toys’ overall security posture. This was outlined clearly in the **Scope, Goals, and Risk Assessment Report**.
+## Audit Scenario
 
-## The Controls and Compliance Checklist: Breaking it Down
+Botium Toys operates as a small U.S.-based toy retailer with a growing online presence. The company faces challenges in managing its IT infrastructure while ensuring compliance with online payment regulations and safeguarding sensitive customer information. The IT manager has recognized the need for a comprehensive internal audit to assess potential risks, enhance business continuity, and establish a solid security framework as the business expands both domestically and internationally.
 
-When people talk about “controls,” they’re referring to measures put in place to prevent, detect, or correct security risks. “Compliance,” on the other hand, deals with following legal and regulatory standards (think GDPR for E.U. customers or PCI DSS for handling credit card information). The **Controls and Compliance Checklist** is a tool that helps evaluate whether a company is adhering to these standards and what measures they have in place.
+The goals of the audit, as outlined in the **Scope, Goals, and Risk Assessment Report**, are:
 
-Here’s where Botium Toys fell short—and how we can fix it:
+- To implement the National Institute of Standards and Technology Cybersecurity Framework (NIST CSF).
+- To improve processes for compliance.
+- To fortify system controls.
+- To enforce the principle of least privilege in user credential management.
+- To develop and document necessary policies and procedures.
 
-### 1. Lack of Access Controls
+## Audit Workflow Checklist
 
-Every employee at Botium Toys could access sensitive customer data, which is a big red flag. The concept of **least privilege** was missing—an important control that limits data access only to those who need it to perform their job. This would reduce the risk of insider threats and prevent potential breaches. The solution here is simple: Implement **role-based access control (RBAC)** to ensure only authorized personnel can access sensitive information.
+The audit process consists of the following steps:
 
-### 2. No Encryption for Credit Card Data
+1. **Define Audit Scope and Goals**
+   - Establish the scope of the audit.
+   - Identify specific goals aligned with NIST CSF.
 
-Perhaps the most glaring issue was that customer credit card information wasn’t encrypted at all. In today’s cybersecurity landscape, encryption is non-negotiable, especially for payment information. Botium Toys needs to encrypt data both **at rest** and **in transit**. Without this, even a minor breach could lead to devastating consequences for customers and the company itself.
+2. **Conduct the Audit**
+   - Analyze the current cybersecurity landscape.
+   - Perform a comprehensive assessment of existing security measures.
 
-### 3. Weak Password Policies
+3. **Complete Controls Assessment**
+   - Evaluate current controls and identify gaps.
+   - Prioritize necessary controls for implementation.
 
-Weak password policies are often the Achilles' heel of many organizations, and Botium Toys was no exception. Their password requirements were outdated, failing to meet the complexity needed to ward off brute force attacks. Introducing **multi-factor authentication (MFA)** and stronger, regularly enforced password policies would immediately tighten up this weak spot.
+4. **Complete Compliance Checklist**
+   - Review compliance regulations and standards.
+   - Justify adherence to selected regulations.
 
-### 4. No Intrusion Detection System (IDS)
+5. **Document Findings and Recommendations**
+   - Summarize findings from the audit.
+   - Clearly outline actionable recommendations for stakeholders.
 
-Botium Toys had a firewall and antivirus software in place, but that’s not enough. Without an **Intrusion Detection System (IDS)**, the company had no way of knowing if they were already under attack. Installing an IDS would give them visibility into potential threats and allow them to respond quickly.
+6. **Communicate Findings**
+   - Prepare a concise report for stakeholders.
+   - Present findings and recommendations clearly.
 
-### 5. No Backups or Disaster Recovery Plans
+## Controls Assessment
 
-Shockingly, Botium Toys didn’t have a **disaster recovery plan** (DRP) or regular backups of critical data. This is a huge risk for any business—especially in an era where ransomware attacks are increasingly common. I recommended that Botium Toys develop a DRP immediately and set up **regular backups** to ensure business continuity in the event of a cyberattack or system failure.
+### Current Assets
 
-## Compliance Issues
+The IT Department manages several essential assets, including:
 
-Now, let’s talk about compliance. **GDPR** and **PCI DSS** are two major regulations that Botium Toys needed to comply with. They did have a breach notification plan in place for E.U. customers, ensuring that they'd be notified within 72 hours if their data was compromised—a key GDPR requirement. However, they failed to meet several other compliance best practices:
+- On-premises equipment for daily operations.
+- Employee devices (desktops, laptops, smartphones).
+- Management of systems and services (accounting, telecommunications, security, ecommerce).
+- Internet connectivity and internal network management.
+- Vendor access control and data storage solutions.
 
-- **Credit card information** wasn’t stored in a secure environment.
-- **PII/SPII (Sensitive Personally Identifiable Information)** wasn’t sufficiently protected.
-- **Data encryption** and **user access policies** were missing.
+### Controls Assessment Checklist
 
-Failing to meet these regulations could lead to hefty fines and legal penalties, something no company wants to deal with.
+Does Botium Toys currently have this control in place?
 
-## Risk Management: Prioritizing the Gaps
+| Control                                                   | Control in Place | Control Not in Place |
+|----------------------------------------------------------|------------------|---------------------|
+| Least Privilege                                          |                  | ✔️                  |
+| Disaster Recovery Plans                                   |                  | ✔️                  |
+| Password Policies                                        |                  | ✔️                  |
+| Separation of Duties                                     |                  | ✔️                  |
+| Firewall                                                 | ✔️               |                     |
+| Intrusion Detection System (IDS)                         |                  | ✔️                  |
+| Backups                                                  |                  | ✔️                  |
+| Antivirus Software                                       | ✔️               |                     |
+| Manual Monitoring, Maintenance, and Intervention for Legacy Systems |                  | ✔️                  |
+| Encryption                                               | ✔️               |                     |
+| Password Management System                                |                  | ✔️                  |
+| Locks (Offices, Storefront, Warehouse)                  | ✔️               |                     |
+| Closed-Circuit Television (CCTV) Surveillance            | ✔️               |                     |
+| Fire Detection/Prevention (Fire Alarm, Sprinkler System) | ✔️               |                     |
 
-Cybersecurity risk is all about identifying what can go wrong, how likely it is to happen, and the impact if it does. In Botium Toys’ case, the **risk score** was quite high—an 8 out of 10. This was largely due to their lack of controls around data access, encryption, and backups. The **potential for fines and data loss** was significant.
+## Compliance Checklist
 
-## Key Takeaways and Recommendations
+Does Botium Toys currently adhere to this compliance best practice?
 
-1. **Implement Role-Based Access Controls**: Limit access to sensitive data and systems by introducing least privilege policies. Only those who need access should have it.
+### Payment Card Industry Data Security Standard (PCI DSS)
 
-2. **Encrypt Sensitive Data**: Protect customer credit card information and PII with strong encryption methods at every stage of the data lifecycle—whether it’s being stored, transmitted, or processed.
+| Best Practice                                                   | Control in Place | Control Not in Place |
+|----------------------------------------------------------------|------------------|---------------------|
+| Only authorized users have access to customers’ credit card information.  |                  | ✔️                  |
+| Credit card information is stored, accepted, processed, and transmitted internally, in a secure environment. |                  | ✔️                  |
+| Implement data encryption procedures to better secure credit card transaction touchpoints and data. |                  | ✔️                  |
+| Adopt secure password management policies.                            |                  | ✔️                  |
 
-3. **Strengthen Password and Authentication Policies**: Introduce a robust password policy that meets current standards and implement multi-factor authentication to add another layer of security.
+### General Data Protection Regulation (GDPR)
 
-4. **Set Up an IDS and Backups**: Install an Intrusion Detection System to monitor for potential threats and set up regular backups and a disaster recovery plan to ensure business continuity.
+| Best Practice                                                   | Control in Place | Control Not in Place |
+|----------------------------------------------------------------|------------------|---------------------|
+| E.U. customers’ data is kept private/secured.                  |                  | ✔️                  |
+| There is a plan in place to notify E.U. customers within 72 hours if their data is compromised/there is a breach. | ✔️               |                     |
+| Ensure data is properly classified and inventoried.            |                  | ✔️                  |
+| Enforce privacy policies, procedures, and processes to properly document and maintain data. | ✔️               |                     |
 
-5. **Adhere to Compliance Standards**: Get up to speed with PCI DSS and GDPR requirements. Botium Toys must ensure that data is protected and breaches are handled according to regulations to avoid fines.
+### System and Organizations Controls (SOC type 1, SOC type 2)
 
-## Wrapping Up
+| Best Practice                                                   | Control in Place | Control Not in Place |
+|----------------------------------------------------------------|------------------|---------------------|
+| User access policies are established.                          |                  | ✔️                  |
+| Sensitive data (PII/SPII) is confidential/private.            |                  | ✔️                  |
+| Data integrity ensures the data is consistent, complete, accurate, and has been validated. | ✔️               |                     |
+| Data is available to individuals authorized to access it.     |                  | ✔️                  |
 
-Working on the Controls and Compliance Checklist for Botium Toys was eye-opening. It highlighted the importance of not only having controls in place but also ensuring compliance with regulations to avoid both security risks and legal consequences. These gaps aren’t just theoretical—they represent real risks that could affect any organization.
+## Recommendations for the IT Manager
 
-For anyone starting out in cybersecurity like I am, this kind of hands-on experience is invaluable. It’s not just about learning the technical jargon; it’s about understanding how everything connects to protect an organization from internal and external threats. Controls and compliance are at the heart of that protection, and I’m excited to keep building my knowledge in this area.
+**TO:** IT Manager, Stakeholders  
+**FROM:** [Your Name]  
+**DATE:** [Insert Date]  
+**SUBJECT:** Internal IT Audit Findings and Recommendations
+
+---
+
+### Overview
+
+This memorandum presents the internal audit findings for Botium Toys, highlighting critical vulnerabilities in both the organization's security controls and compliance with essential regulations. The audit has identified significant issues, particularly concerning the Payment Card Industry Data Security Standard (PCI DSS), which is crucial for any business handling credit card transactions. Specifically, Botium Toys lacks proper access controls for customer credit card information, secure storage mechanisms, and necessary encryption protocols, posing substantial risks to both customer data and the company's reputation.
+
+Additionally, the audit has revealed multiple deficiencies in the implementation of System and Organizations Controls (SOC type 1 and SOC type 2). These standards are designed to ensure that organizations maintain effective internal controls over financial reporting and data security. Key controls such as user access policies and confidentiality measures for sensitive data (PII/SPII) are currently not in place. This not only exposes the organization to potential data breaches but also increases the risk of regulatory penalties.
+
+While the General Data Protection Regulation (GDPR) compliance requirements are noted, they are not the primary focus of concern in this audit. Instead, the lack of adherence to PCI DSS and SOC controls presents immediate and more pressing vulnerabilities that Botium Toys must address to safeguard its operations and customer trust.
+
+In light of these findings, actionable recommendations will be provided to enhance the organization's cybersecurity posture and ensure compliance with relevant regulatory standards.
+
+---
+
+### Audit Scope
+
+The audit evaluated systems including:
+
+- Accounting
+- Endpoint detection
+- Firewalls
+- Intrusion detection systems
+- Security information management tools
+
+### Audit Goals
+
+- Align with the NIST Cybersecurity Framework (NIST CSF)
+- Enhance compliance processes
+- Strengthen overall system controls
+- Implement least privilege for user management
+- Develop comprehensive policies and procedures
+
+---
+
+### Critical Findings
+
+| Control Area                                    | Finding Description                                                                                   | Recommendation                                                                                 |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **Least Privilege**                            | Not implemented, allowing unnecessary access to sensitive data for some employees.                  | Develop and enforce role-based access controls (RBAC) to ensure employees only have access to the information necessary for their job functions. |
+| **Disaster Recovery Plans**                     | No disaster recovery plan is currently in place, posing significant risk during data loss incidents.| Create a comprehensive disaster recovery plan that outlines procedures for maintaining business continuity in the event of a disaster or cyber incident. |
+| **Password Policies**                          | Weak policies not adequately protecting user accounts.                                              | Implement a robust password policy that includes requirements for complexity, length, and periodic changes. Consider enforcing multi-factor authentication (MFA) for additional security. |
+| **Separation of Duties**                       | Lack of separation increases fraud risk.                                                             | Establish clear role definitions and responsibilities within the organization to ensure that no single individual has control over all aspects of a critical process. |
+| **Intrusion Detection System (IDS)**           | Absent; no monitoring of network traffic for suspicious activity.                                    | Invest in an IDS to enhance security monitoring capabilities and enable quick response to potential threats. |
+| **Backups**                                    | No regular backup procedures for critical data.                                                    | Implement a regular backup schedule, including offsite backups, to ensure data can be restored in the event of loss or corruption. |
+| **Manual Monitoring for Legacy Systems**       | Current processes for managing legacy systems are insufficient.                                     | Establish a structured monitoring and maintenance plan for legacy systems to mitigate vulnerabilities associated with outdated technology. |
+| **Password Management System**                 | No centralized system to enforce password policies.                                                 | Deploy a password management solution to store and manage passwords securely, helping to reduce the risk of password-related breaches. |
+| **PCI DSS Compliance Issues**                   | - Unauthorized access to credit card information.<br>- Lack of secure storage and processing of credit card information.<br>- Inadequate data encryption procedures.<br>- Weak password management policies. | Implement strict access controls and secure storage for credit card data, develop strong password management policies, and adopt encryption for sensitive data both at rest and in transit. |
+
+---
+
+### Recommendations
+
+Addressing these findings is essential for Botium Toys as it expands its services. Recommendations include:
+
+1. **PCI DSS Compliance**: 
+   - Implement strict access controls and secure storage for credit card data.
+   - Develop and enforce strong password management policies.
+   - Adopt encryption for sensitive data both at rest and in transit.
+
+2. **General Data Protection Regulation (GDPR)**:
+   - Strengthen data privacy policies and ensure compliance with data classification and inventory.
+
+3. **Control Enhancements**:
+   - Establish disaster recovery plans and implement regular backups.
+   - Integrate an intrusion detection system to monitor for threats.
+
+4. **Policy Development**:
+   - Create and enforce comprehensive policies for password management, user access, and separation of duties.
+
+---
+
+## Conclusion
+
+This mock security audit report provides a comprehensive examination of Botium Toys' cybersecurity practices, highlighting key areas of vulnerability and opportunities for improvement. Throughout the audit process, I have identified critical controls that are not currently in place, which poses significant risks to the organization's security posture.
+
+Reflecting on this experience, I learned the importance of clarity and thoroughness in evaluating cybersecurity measures. The process of reviewing the existing policies and identifying gaps was eye-opening and has deepened my understanding of the complexities involved in maintaining a secure environment. 
+
+I also recognized the value of implementing structured processes and controls, such as the principle of least privilege, disaster recovery planning, and robust password management. These recommendations are not merely theoretical; they represent real-world necessities for organizations striving to protect sensitive information and maintain compliance with regulatory standards.
+
+Overall, this audit has reinforced my commitment to advancing my knowledge and skills in cybersecurity. It has also highlighted the need for continuous improvement in security practices to adapt to an ever-evolving threat landscape. The lessons learned will be invaluable as I move forward in my professional journey.
