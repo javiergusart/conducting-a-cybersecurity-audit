@@ -1,4 +1,4 @@
-# Identifying Security Gaps and Compliance Issues in a Mock Audit
+# Identifying Security Gaps and Compliance Issues in Cybersecurity Audits
 
 ## Table of Contents
 1. [Introduction](#introduction)
