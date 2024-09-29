@@ -82,7 +82,7 @@ Does Botium Toys currently have this control in place?
 | Backups                                                  |                  | ✔️                  |
 | Antivirus Software                                       | ✔️               |                     |
 | Manual Monitoring, Maintenance, and Intervention for Legacy Systems |                  | ✔️                  |
-| Encryption                                               | ✔️               |                     |
+| Encryption                                               |                | ✔️                     |
 | Password Management System                                |                  | ✔️                  |
 | Locks (Offices, Storefront, Warehouse)                  | ✔️               |                     |
 | Closed-Circuit Television (CCTV) Surveillance            | ✔️               |                     |
